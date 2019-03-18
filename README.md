@@ -23,7 +23,7 @@ In the file `android/app/build.gradle` on dependencies block, add the follow cod
     implementation 'com.google.android.support:wearable:2.2.0'
 ```
 
-Android app to mobile devices and Android app to wearable should have the same `applicationId`.
+##### Android app to mobile devices and Android app to wearable should have the same `applicationId`.
 
 Thanks
 ------
