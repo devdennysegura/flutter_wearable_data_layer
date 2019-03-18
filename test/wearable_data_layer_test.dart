@@ -15,7 +15,11 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  test('getPlatformVersion', () async {
-    expect(await WearableDataLayer.platformVersion, '42');
+  test('send default message', () async {
+    final bool response = await WearableDataLayer.sendDefaultPath(
+      'test from wearable',
+    );
+    // compare to false because, its not running over wearable
+    expect(response, isFalse);
   });
 }

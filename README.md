@@ -1,14 +1,34 @@
-# wearable_data_layer
+# wearable_data_layer (Android Only)
 
-A new flutter plugin project.
+A Flutter plugin to send and receive messages on wearable([Data-Layer](https://developer.android.com/training/wearables/data-layer/messages.html)).
 
-## Getting Started
+Note: This plugin is still under development.
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.io/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+<div style="display:flex;flex-direction:row;">
+    <img src="screenshots/flutter_01.png" alt="screen_01" height="300" />
+    <img src="screenshots/flutter_02.png" alt="screen_02" height="300" />
+    <img src="screenshots/flutter_03.png" alt="screen_02" height="300" />
+</div>
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+### To use
+#### Android
+
+In the file `android/app/build.gradle` on dependencies block, add the follow code:
+
+```gradle
+// wearable libraries
+    implementation 'com.android.support:wear:26.1.0'
+    implementation 'com.google.android.gms:play-services-wearable:12.0.1'
+    compileOnly 'com.google.android.wearable:wearable:2.2.0'
+    implementation 'com.google.android.support:wearable:2.2.0'
+```
+
+Thanks
+------
+
+**Denny Segura** © 2019+, Released under the [MIT License].<br>
+
+> GitHub [@devdennysegura](https://github.com/devdennysegura) &nbsp;&middot;&nbsp;
+> Twitter [@dennysegura3](https://twitter.com/dennysegura3)
+
+[MIT License]: http://mit-license.org/
